@@ -1,0 +1,33 @@
+Web Server:
+1. Listens
+2. On a Port
+3. Sending a Request
+4. Using a Transport Protocol
+5. Returning a Response
+6. With a particular Resource
+
+Listening
+- On a particular IP Address
+
+On a Port
+- 65,535 Ports
+- IP_ADDRESS:XXXXX
+- HTTP: 80
+- HTTPS: 443
+
+Sending a Request:
+- HTTP: Hyper Text Transfer Protocol
+- first line: GET /orders/123 HTTP/1.1   
+- request method, request target - location of resource, http version 
+- future lines: Headers like Host, User-Agent
+- final lines: Body in JSON, TXT, etc.
+
+Returning a Response
+- version, status code
+- headers defined as key value pairs
+- body contains HTML content, JSON content, etc.
+
+With a particular Resource
+- routing: static and dynamic
+- static - right out of a folder
+- dynamic - content changes dynamically depending on the data provided to the html

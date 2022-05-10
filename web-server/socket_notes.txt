@@ -1,0 +1,25 @@
+Sockets are endpoints of bidirectional communications channel.
+Can communicate:
+- within process
+- between processes on same machine
+- between processes on different machines
+The socket class provides classes for handling common transports
+
+... Vocabulary ...
+
+domain - protocols that are used as the transport mechanism
+
+type - type of communication between two endpoints
+    SOCK_STREAM - connection protocols
+    SOCK_DGRAM - connectionless protocols
+
+protocol - 0, variant of protocol within domain and type
+
+hostname - identifier of network interface
+    host name, dotted-quad address, IPv6
+    "<broadcast>" which specifies INADDR_BROADCAST address
+    zero-lenth string that specifies INADDR_ANY or
+    Integer, binary address in host byte order
+
+port - listen for clients calling on one or more port, can be number,
+string, or name of service
