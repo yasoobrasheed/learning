@@ -23,3 +23,15 @@ hostname - identifier of network interface
 
 port - listen for clients calling on one or more port, can be number,
 string, or name of service
+
+---
+
+Flow:
+1. Build Listening Socket
+socket().bind().listen().accept()
+Listens for connections from clients. When client .connect(), server .accept()
+2. Round Trip
+.send().recv()
+Both client and server send and receive data
+3. Close Sockets
+close()
